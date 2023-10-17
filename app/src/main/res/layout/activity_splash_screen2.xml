@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".SplashScreen2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="124dp"
+            android:layout_height="98dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/rctgl2"
+            android:layout_marginTop="400dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/discover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Discover a"
+                android:textSize="40sp"
+                android:layout_marginTop="445dp"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/comfort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="475dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="comfort"
+                android:textColor="@color/yellow"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/you"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="475dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="you!"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="Use CIneAngel to plan an exciting "
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="540dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="movie night at the cinema without"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="565dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="the hassle of waiting in line!"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="580dp"/>
+
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/register_btn"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/rl1"
+            android:layout_marginStart="232dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="30dp"
+            app:cornerRadius="15dp"
+            android:text="Get Started"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:backgroundTint="@color/yellow"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

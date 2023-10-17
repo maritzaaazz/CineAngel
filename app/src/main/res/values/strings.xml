@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">CineAngel</string>
+    <string name="storyline">Miles Morales catapults across the Multiverse,
+where he encounters a team of Spider-People
+charged with protecting its very existence.
+When the heroes clash on how to handle a new
+        threat, Miles must redefine what it means to be
+a hero.</string>
+
+    <array name="bioskop">
+        <item>Select</item>
+        <item>XXI Jogja City Mall, Studio 1</item>
+        <item>XXI Jogja City Mall, Studio 2</item>
+        <item>XXI Ambarukmo Plaza, Studio 1</item>
+        <item>XXI Ambarukmo Plaza, Studio 2</item>
+        <item>CGV Jwalk Mall, Studio 1</item>
+        <item>Cinepolis Lippo Plaza Jogja, Studio 1</item>
+    </array>
+    <array name="seats">
+        <item>Select</item>
+        <item>Regular 2D</item>
+        <item>Regular 3D</item>
+        <item>Sweetbox</item>
+    </array>
+    <array name="payment">
+        <item>Select</item>
+        <item>Transfer Bank</item>
+        <item>QR</item>
+    </array>
+    <array name="paymentbank">
+        <item>Select</item>
+        <item>BNI</item>
+        <item>Mandiri</item>
+        <item>BCA</item>
+        <item>CIMB NIAGA</item>
+    </array>
+    <array name="paymentqr">
+        <item>Qris</item>
+    </array>
+</resources>

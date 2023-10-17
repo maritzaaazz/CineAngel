@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".Home">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/hello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Hello, "
+                    android:textColor="@color/blue"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/editTextUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toRightOf="@id/hello"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Username"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tandaseru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toRightOf="@id/editTextUsername"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="!"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/topmovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Top Movie"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/spiderman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/spiderman"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_toRightOf="@id/spiderman"
+                    android:src="@drawable/avatar"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/titlespiderman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Spider-Man"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titlespiderman"
+                    android:layout_marginStart="19dp"
+                    android:background="@drawable/baseline_star_24" />
+
+                <TextView
+                    android:id="@+id/star2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titlespiderman"
+                    android:layout_toRightOf="@id/star"
+                    android:background="@drawable/baseline_star_24" />
+
+                <TextView
+                    android:id="@+id/star3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titlespiderman"
+                    android:layout_toRightOf="@id/star2"
+                    android:background="@drawable/baseline_star_24" />
+
+                <TextView
+                    android:id="@+id/star4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titlespiderman"
+                    android:layout_toRightOf="@id/star3"
+                    android:background="@drawable/baseline_star_24" />
+
+                <TextView
+                    android:id="@+id/star5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titlespiderman"
+                    android:layout_toRightOf="@id/star4"
+                    android:background="@drawable/baseline_star_24" />
+
+                <TextView
+                    android:id="@+id/titleavatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/titlespiderman"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Avatar"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/star6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titlespiderman"
+                    android:layout_marginStart="92dp"
+                    android:layout_toRightOf="@id/star5"
+                    android:background="@drawable/baseline_star_24" />
+
+                <TextView
+                    android:id="@+id/star7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titlespiderman"
+                    android:layout_toRightOf="@id/star6"
+                    android:background="@drawable/baseline_star_24" />
+
+                <TextView
+                    android:id="@+id/star8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titlespiderman"
+                    android:layout_toRightOf="@id/star7"
+                    android:background="@drawable/baseline_star_24" />
+
+                <TextView
+                    android:id="@+id/star9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titlespiderman"
+                    android:layout_toRightOf="@id/star8"
+                    android:background="@drawable/baseline_star_24" />
+
+                <TextView
+                    android:id="@+id/star10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titlespiderman"
+                    android:layout_toRightOf="@id/star9"
+                    android:background="@drawable/baseline_star_24" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/comingsoon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Coming Soon"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/pawpatrol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/pawpatrol"/>
+
+                <TextView
+                    android:id="@+id/pawtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_toRightOf="@id/pawpatrol"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Paw Patrol"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/pawgenre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pawtitle"
+                    android:layout_marginStart="30dp"
+                    android:layout_toRightOf="@id/pawpatrol"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Animation, Action, Adventure"
+                    android:textColor="@color/blue"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/pawdurasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pawgenre"
+                    android:layout_marginStart="30dp"
+                    android:layout_toRightOf="@id/pawpatrol"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="1 hour 33 minutes"
+                    android:textColor="@color/blue"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/pawumur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pawdurasi"
+                    android:layout_marginStart="30dp"
+                    android:layout_toRightOf="@id/pawpatrol"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="SU"
+                    android:textColor="@color/blue"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/sherina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/sherina"/>
+
+                <TextView
+                    android:id="@+id/sherinatitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_toRightOf="@id/sherina"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Sherina"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/sherinagenre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sherinatitle"
+                    android:layout_marginStart="30dp"
+                    android:layout_toRightOf="@id/sherina"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Drama, Musikal"
+                    android:textColor="@color/blue"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/sherinadurasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sherinagenre"
+                    android:layout_marginStart="30dp"
+                    android:layout_toRightOf="@id/sherina"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="2 hour 6 minutes"
+                    android:textColor="@color/blue"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/sherinaumur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sherinadurasi"
+                    android:layout_marginStart="30dp"
+                    android:layout_toRightOf="@id/sherina"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="SU"
+                    android:textColor="@color/blue"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:id="@+id/rascal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/rascal"/>
+
+                <TextView
+                    android:id="@+id/rascaltitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_toRightOf="@id/rascal"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Rascal Does Not Dream Of a Sister"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/rascalgenre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rascaltitle"
+                    android:layout_marginStart="30dp"
+                    android:layout_toRightOf="@id/rascal"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Animation"
+                    android:textColor="@color/blue"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/rascaldurasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rascalgenre"
+                    android:layout_marginStart="30dp"
+                    android:layout_toRightOf="@id/rascal"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="1 hour 13 minutes"
+                    android:textColor="@color/blue"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/rascalumur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rascaldurasi"
+                    android:layout_marginStart="30dp"
+                    android:layout_toRightOf="@id/rascal"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="R 13+"
+                    android:textColor="@color/blue"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

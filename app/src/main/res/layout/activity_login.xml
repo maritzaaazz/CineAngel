@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="30sp"
+        android:textColor="@color/blue"
+        android:text="Log In"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="130dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/rectangle_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:background="@drawable/rctgl" />
+
+        <ImageView
+            android:id="@+id/logo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo2"
+            android:layout_marginTop="260dp"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="380dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#F5F5F5"
+            android:drawableLeft="@drawable/baseline_people_24"
+            android:drawablePadding="25dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Username"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="17dp"
+            android:textAlignment="textStart"
+            android:textColor="#555555"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="450dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rounded"
+            android:drawablePadding="25dp"
+            android:paddingVertical="17dp"
+            android:paddingHorizontal="24dp"
+            android:drawableLeft="@drawable/baseline_password_24"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:fontFamily="@font/poppins_medium"
+            android:textAlignment="textStart"
+            android:textSize="12sp"
+            android:textColor="#555555"
+            android:backgroundTint="#F5F5F5"/>
+
+        <TextView
+            android:id="@+id/forgotp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="12sp"
+            android:layout_below="@id/editTextPassword"
+            android:layout_marginHorizontal="260dp"
+            android:textColor="@color/yellow"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginbtn"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/forgotp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Log In"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="50dp" />
+
+        <TextView
+            android:id="@+id/newmember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Member?"
+            android:layout_below="@id/loginbtn"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="140sp"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_below="@id/loginbtn"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/newmember"
+            android:layout_marginStart="7dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/yellow"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

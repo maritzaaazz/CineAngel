@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".Details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl3">
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/baseline_arrow_back_ios_24" />
+
+            <TextView
+                android:id="@+id/topmovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Top Movie"
+                android:textColor="@color/blue"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/spiderman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/spiderman" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titlespidermandetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Spider-Man"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/genrepidermandetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Animation, Action, Adventure"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/durasipidermandetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="58dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="1 hour 33 minutes"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/umurspidermandetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="76dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="SU"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/star11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/poppins_medium"
+                android:background="@drawable/baseline_star_24"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="103dp"
+                android:layout_toRightOf="@id/star11"
+                android:fontFamily="@font/poppins_medium"
+                android:text="4,9"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/storyline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="140dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Story Line"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/storyline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="170dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/storyline"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/getticketbtn"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/storyline2"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="50dp"
+                android:text="Get Ticket"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/yellow"
+                android:fontFamily="@font/poppins_bold"
+                android:backgroundTint="@color/blue"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

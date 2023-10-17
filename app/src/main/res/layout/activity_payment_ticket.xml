@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".PaymentTicket">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/baseline_arrow_back_ios_24" />
+
+            <TextView
+                android:id="@+id/payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Payment"
+                android:textColor="@color/blue"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/tvBioskop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Pilih Bioskop"
+                android:textColor="@color/blue"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerBioskop"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/tvBioskop"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/rounded"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvBioskop"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="300dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/baseline_arrow_drop_down_24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/tvSeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Pilih Seat"
+                android:textColor="@color/blue"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerSeat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/tvSeat"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/rounded"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSeat"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="300dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/baseline_arrow_drop_down_24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTanggalSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Pilih Tanggal"
+                android:textColor="@color/blue"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="290dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rounded"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvSeatSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Nama Seat"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvPriceSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/tvSeatSet"
+                android:text="Rp0"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/horiLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/blue"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvActualPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Actual Pay"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvTotPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginStart="173dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tvActualPay"
+                android:text="Rp0"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="18sp"
+                android:layout_marginStart="30dp"
+                android:text="Add Payment Method"
+                android:textColor="@color/blue"
+                android:layout_marginTop="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerPayment"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/rounded"
+                android:spinnerMode="dropdown" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMethod"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="300dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/baseline_arrow_drop_down_24" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerPaymentP"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/rounded"
+                android:spinnerMode="dropdown" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerPayment"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="150dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/baseline_arrow_drop_down_24" />
+
+            <EditText
+                android:id="@+id/accountNumber"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="230dp"
+                android:layout_below="@id/spinnerPayment"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/rounded"
+                android:backgroundTint="#F5F5F5"
+                android:drawablePadding="25dp"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Account Number"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="17dp"
+                android:textAlignment="textStart"
+                android:textColor="#555555"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ordrsummerybtn"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/accountNumber"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="10dp"
+            app:cornerRadius="50dp"
+            android:text="Order Summary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:fontFamily="@font/poppins_bold"
+            android:backgroundTint="@color/blue"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
