@@ -15,9 +15,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         with(binding) {
-            imageView2.setOnClickListener {
-                val intentview = Intent(this@MainActivity, SplashScreen2::class.java)
-                startActivity(intentview)
+            imageView2.alpha = 0f
+            imageView2.animate().setDuration(1500).alpha(1f).withEndAction() {
+                val intent = Intent(this@MainActivity, SplashScreen2::class.java)
+                startActivity(intent)
+                finish()
             }
         }
     }

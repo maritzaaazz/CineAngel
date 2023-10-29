@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SummarizeFragment">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/yellow"
+        tools:context=".Summarize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/baseline_arrow_back_ios_24" />
+
+            <TextView
+                android:id="@+id/summarize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Summarize"
+                android:textColor="@color/blue"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lyCategories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/summarize1"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/rounded"
+                android:backgroundTint="#F5F5F5"
+                android:drawablePadding="25dp"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Avatar"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="17dp"
+                android:textAlignment="center"
+                android:textColor="#555555"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/summarize2"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/rounded"
+                android:backgroundTint="#F5F5F5"
+                android:drawablePadding="25dp"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Spider-Man"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="17dp"
+                android:textAlignment="center"
+                android:textColor="#555555"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/summarize3"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/rounded"
+                android:backgroundTint="#F5F5F5"
+                android:drawablePadding="25dp"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Ghost"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="17dp"
+                android:textAlignment="center"
+                android:textColor="#555555"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

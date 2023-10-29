@@ -19,7 +19,7 @@ class Login : AppCompatActivity() {
                 val password = editTextPassword.text.toString()
 
                 if (otentifikasi(username, password)) {
-                    val intentLogin = Intent(this@Login, Home::class.java)
+                    val intentLogin = Intent(this@Login, Layout::class.java)
                     intentLogin.putExtra("usn", username)
                     startActivity(intentLogin)
                     finish()

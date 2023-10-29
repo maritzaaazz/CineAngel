@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountFragment">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/yellow"
+        tools:context=".Account">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/baseline_arrow_back_ios_24" />
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Account"
+                android:textColor="@color/blue"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/profil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/profil" />
+
+        <LinearLayout
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="350dp"
+            android:layout_marginStart="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/grey2"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="maritzaaazz"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/blue"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="420dp"
+            android:layout_marginStart="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/grey2"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/email2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="maritzaangel04@gmail.com"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/blue"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="440dp">
+
+            <TextView
+                android:id="@+id/privacy"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/poppins_medium"
+                android:background="@drawable/baseline_privacy_tip_24"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/privacypolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="103dp"
+                android:layout_toRightOf="@id/privacy"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Privacy Polies"
+                android:textColor="@color/blue"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/arrow2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="100dp"
+                android:layout_toRightOf="@+id/privacypolicy"
+                android:fontFamily="@font/poppins_medium"
+                android:background="@drawable/baseline_arrow_forward_ios_24"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="490dp">
+
+            <TextView
+                android:id="@+id/logout2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/poppins_medium"
+                android:background="@drawable/baseline_logout_24"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/logouttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="103dp"
+                android:layout_toRightOf="@id/logout2"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Logout"
+                android:textColor="@color/blue"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/arrow3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="100dp"
+                android:layout_toRightOf="@+id/logouttext"
+                android:fontFamily="@font/poppins_medium"
+                android:background="@drawable/baseline_arrow_forward_ios_24"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>
